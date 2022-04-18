@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Recording+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Recording+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Document+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Document+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:PerformDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

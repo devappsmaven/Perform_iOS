@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DocSetRelation" representedClassName="DocSetRelation" syncable="YES">
+        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="document" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Document" inverseName="docSetRel" inverseEntity="Document"/>
+        <relationship name="setlist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Setlist" inverseName="docSetRel" inverseEntity="Setlist"/>
+    </entity>
+    <entity name="Document" representedClassName="Document" syncable="YES">
+        <attribute name="docData" optional="YES" attributeType="Binary"/>
+        <attribute name="docId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="docName" optional="YES" attributeType="String"/>
+        <attribute name="docPromptSize" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="docPromptSpeed" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="docSetRel" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DocSetRelation" inverseName="document" inverseEntity="DocSetRelation"/>
+        <relationship name="recordings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Recording" inverseName="document" inverseEntity="Recording"/>
+    </entity>
+    <entity name="Recording" representedClassName="Recording" syncable="YES">
+        <attribute name="recData" optional="YES" attributeType="Binary"/>
+        <attribute name="recStr" optional="YES" attributeType="String"/>
+        <relationship name="document" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Document" inverseName="recordings" inverseEntity="Document"/>
+    </entity>
+    <entity name="Setlist" representedClassName="Setlist" syncable="YES">
+        <attribute name="setName" optional="YES" attributeType="String"/>
+        <relationship name="docSetRel" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DocSetRelation" inverseName="setlist" inverseEntity="DocSetRelation"/>
+    </entity>
+    <elements>
+        <element name="DocSetRelation" positionX="-36" positionY="27" width="128" height="88"/>
+        <element name="Document" positionX="-63" positionY="-18" width="128" height="134"/>
+        <element name="Recording" positionX="-45" positionY="36" width="128" height="74"/>
+        <element name="Setlist" positionX="-54" positionY="18" width="128" height="73"/>
+    </elements>
+</model>

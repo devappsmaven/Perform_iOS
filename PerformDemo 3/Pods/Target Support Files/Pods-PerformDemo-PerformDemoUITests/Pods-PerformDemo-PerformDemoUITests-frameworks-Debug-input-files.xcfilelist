@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-PerformDemo-PerformDemoUITests/Pods-PerformDemo-PerformDemoUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework
+${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework
+${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework
+${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework
+${BUILT_PRODUCTS_DIR}/SwiftyDropbox/SwiftyDropbox.framework
